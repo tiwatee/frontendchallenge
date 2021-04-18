@@ -1,0 +1,148 @@
+body{
+    background: hsl(233, 47%, 7%);
+    color: white;
+    font-family: lexend;
+}
+
+@font-face {
+    font-family: inter;
+    src: url(./font/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+    font-family: lexend;
+    src: url(./font/Lexend_Deca/LexendDeca-Regular.ttf);
+}
+.wrapper{
+    margin: 60px 5%;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 15px;
+    width:90%;
+    padding-bottom: 20px;
+}
+
+header{
+    width: 100%;    
+}
+
+.images{
+    height: 250px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;    
+}
+
+.rela{
+    position: relative;
+}
+.abso{
+    position: absolute;
+    background: hsl(277, 64%, 61%);
+    opacity: 0.4;
+    top: 0;
+    height: 250px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.bodyCopy{
+    background-color: inherit;
+    padding: 30px;
+}
+h1.FirstLine{
+    background-color: inherit;
+    text-align: center;
+    font-size: 400;
+    font-family:  lexend;
+    color: hsl(0, 0%, 100%);
+}
+p.SecondLine{
+    font-size: 15px;
+    font-family: inter;
+    background-color: inherit;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.75);
+    text-justify: distribute;
+    font-weight:200;
+}
+.stats{
+    background-color: inherit;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2{
+    margin: 0;
+    padding: 0;
+}
+p.statBot{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 15px;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media only screen and (min-width:992px) {
+    body{
+        align-items: center;
+        padding: 39px 9%;
+        width: 80%;
+    }
+    .wrapper{
+        height: 420px;
+        padding-bottom: 0;
+        align-items: center;
+        position: relative;        
+    }
+    .right{
+        width: 46%;
+        float: right;
+        height: 420px;
+        border: 0;
+    }
+    .bodyCopy{
+        max-width:45%;
+        float: left;
+        height: 300px;
+        border-top-left-radius: 15px;
+        overflow: hidden;
+        
+    }
+    .images{
+        height: 420px;
+        border-radius: 0px 15px 15px 0;
+        width: 100%;
+        
+    }
+    .abso{
+        height: 420px;
+        border-radius: 0px 15px 15px 0;
+    }
+    .stats{
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+    .statsbot{
+        padding: 15px;
+        
+    }
+    .attribution{
+        text-align: left;
+        width: 100%;
+        position: absolute;
+        bottom: 5px;
+        margin-left: 50px;
+    }
+}
+@media only screen and (min-width:1200px) {
+    .right{
+        width: 47.5%;
+    }
+    .stats{
+        margin: 20px;
+    }
+}
